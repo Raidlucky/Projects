@@ -9,13 +9,27 @@ text-align: center;
 
 .p{
  color: #333;
+ margin-left: auto;
+ margin-right: auto;
 }
 
 .div {
-border: grey;
-border-radius: 6px
+    border: grey;
+    border-radius: 6px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .link {
     color: blue;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img {
+    border-radius: 4px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
 }
