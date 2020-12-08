@@ -1,0 +1,21 @@
+.body {
+    font-family: arial;
+    color: #333;
+}
+
+.h1 {
+text-align: center;
+}
+
+.p{
+ color: #333;
+}
+
+.div {
+border: grey;
+border-radius: 6px
+}
+
+.link {
+    color: blue;
+}
