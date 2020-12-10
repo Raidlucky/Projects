@@ -6,12 +6,12 @@
 
 .h1 {
 text-align: center;
+text-shadow: 6x 1px;
 }
 
 .p{
  color: #333;
- margin-left: auto;
- margin-right: auto;
+ text-align: center;
 }
 
 .div {
@@ -22,7 +22,7 @@ text-align: center;
 }
 
 .link {
-    color: blue;
+    color: purple;
     margin-left: auto;
     margin-right: auto;
 }
