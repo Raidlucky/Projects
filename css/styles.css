@@ -44,3 +44,17 @@ text-shadow: 1px 1px 2px #000;
     width: 50%;
     height: 50%;
 }
+
+.raidlucky {
+    width: 50%;
+    height: 50%;
+    margin-top: auto;
+    margin-left: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+}
+
+.top-p {
+    color: #333;
+    text-align: left; 
+}
