@@ -26,6 +26,10 @@ text-shadow: 1x 2px black;
     text-align: center;
     display: block;
     margin: 0 auto;
+    border: grey;
+    background-color: #333;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
 .img {
