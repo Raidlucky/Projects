@@ -52,13 +52,38 @@ text-shadow: 1px 1px 2px #000;
     margin-left: auto;
     margin-bottom: auto;
     margin-right: auto;
+    position: relative;
+}
+
+@media screen and (max-width: 992px) {
+    .raidlucky {
+        width: 180px;
+        height: 180px;
+        margin-top: auto;
+        margin-left: 50px;
+        margin-bottom: auto;
+        margin-right: 0px;
+    }
 }
 
 .top-p {
     color: #333;
     text-align: left;
-    width: 400px 
+    width: 400px; 
+    margin-top: 30px;
+    margin-left: 335;
 }
+
+@media screen and (max-width: 992px) {
+    .top-p {
+      margin-left: 100px;
+      color: #333;
+    text-align: left;
+    width: 400px; 
+    margin-top: 30px;
+    margin-left: 100px;
+    }
+  }
 
 .div-top {
     border: #3b3b3b;
