@@ -25,11 +25,13 @@ text-shadow: 1px 1px 2px #000;
 .link {
     color: white;
     text-align: center;
+    text-decoration: none;
     display: block;
     margin: 0 auto;
     border: #2a1f2d;
     background-color: #fa528f;
     border-radius: 4px;
+    padding: 9px 25px;
     cursor: pointer;
     width: 86px;
     height: 20px;
