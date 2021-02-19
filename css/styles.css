@@ -98,3 +98,26 @@ text-shadow: 1px 1px 2px #000;
     display: block;
     box-shadow: 28px 28px 50px #0d275016, -23px -23px 50px #0d275016;
 }
+
+@media screen and (max-width: 667px) {
+    .div {
+        display: block;
+    }
+    .div-first {
+        margin-right: auto;
+    }
+    .top-p {
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+    }
+    .contact {
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .raidlucky {
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+    }
+  }
