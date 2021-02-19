@@ -20,6 +20,7 @@ text-shadow: 1px 1px 2px #000;
     border-radius: 6px;
     margin-left: auto;
     margin-right: auto;
+    display: flex;
 }
 
 .link {
@@ -35,7 +36,7 @@ text-shadow: 1px 1px 2px #000;
     cursor: pointer;
     width: 86px;
     height: 20px;
-    font-size: 20px;
+    font-size: 17px;
     margin-bottom: 18px;
 }
 
@@ -44,7 +45,7 @@ text-shadow: 1px 1px 2px #000;
     text-align: center;
     text-decoration: none;
     display: block;
-    margin: 0 auto;
+    margin-left: 25px;
     border: #2a1f2d;
     background-color: #fa528f;
     border-radius: 4px;
@@ -65,39 +66,16 @@ text-shadow: 1px 1px 2px #000;
     align-content: center;
     width: 50%;
     height: 50%;
+    max-width: 600px;
 }
 
 .raidlucky {
     width: 180px;
     height: 180px;
     margin-top: auto;
-    margin-left: 490px;
+    margin-left: auto;
     margin-bottom: auto;
-    margin-right: auto;
-    position: relative;
-}
-
-@media screen and (max-width: 992px) {
-    .raidlucky {
-        width: 180px;
-        height: 180px;
-        margin-top: auto;
-        margin-left: 100px;
-        margin-bottom: auto;
-        margin-right: -52px;
-    }
-}
-
-@media screen and (max-width: 1798px) {
-    .raidlucky {
-        width: 180px;
-        height: 180px;
-        margin-top: auto;
-        margin-left: 340px;
-        margin-bottom: auto;
-        margin-right: auto;
-        position: relative;
-    }
+    display: inline-block;
 }
 
 .top-p {
@@ -108,22 +86,15 @@ text-shadow: 1px 1px 2px #000;
     margin-left: 25px;
 }
 
-@media screen and (max-width: 992px) {
-    .top-p {
-      margin-left: 100px;
-      color: #333;
-    text-align: left;
-    width: 400px; 
-    margin-top: 30px;
-    margin-left: 100px;
-    }
-  }
 
 .div-top {
     border: #3b3b3b;
-    border-radius: 6px;
+    border-radius: 4px;
+    padding: 10px;
+    max-width: 900px;
     margin-left: auto;
     margin-right: auto;
-    display: inline-block;
-    vertical-align: top;
+    margin-bottom: 20px;
+    display: block;
+    box-shadow: 28px 28px 50px #0d275016, -23px -23px 50px #0d275016;
 }
