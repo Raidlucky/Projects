@@ -99,6 +99,17 @@ text-shadow: 1px 1px 2px #000;
     box-shadow: 28px 28px 50px #0d275016, -23px -23px 50px #0d275016;
 }
 
+.div-description {
+    display: inline-block;
+    margin-right: auto;
+}
+
+.div-first {
+display:block;
+margin-left: auto;
+margin-right: 40px;
+}
+
 @media screen and (max-width: 667px) {
     .div {
         display: block;
