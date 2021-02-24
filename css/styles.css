@@ -110,6 +110,32 @@ margin-left: auto;
 margin-right: 40px;
 }
 
+.div-btn {
+display: flex;
+margin-right: auto;
+margin-left: auto;
+width: 600px;
+}
+
+.div-btn-t {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+padding: 5px;
+width: 80px;
+display: inline-block;
+background-color: #fa528f;
+margin-top: 35px;
+margin-bottom: 15px;
+border-radius: 4px;
+font-size: 17px;
+text-decoration: none;
+color: white;
+text-align: center;
+}
+
 @media screen and (max-width: 667px) {
     .div {
         display: block;
