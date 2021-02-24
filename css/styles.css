@@ -38,6 +38,11 @@ text-shadow: 1px 1px 2px #000;
     height: 20px;
     font-size: 17px;
     margin-bottom: 18px;
+    transition: all 0.3s ease;
+}
+
+.link:hover {
+    background-color: #df6d97;
 }
 
 .contact {
@@ -124,16 +129,21 @@ width: 600px;
 
 .btn {
 padding: 5px;
-width: 80px;
+width: 90px;
 display: inline-block;
 background-color: #fa528f;
 margin-top: 35px;
 margin-bottom: 15px;
 border-radius: 4px;
-font-size: 17px;
+font-size: 18px;
 text-decoration: none;
 color: white;
 text-align: center;
+transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #df6d97;
 }
 
 @media screen and (max-width: 667px) {
