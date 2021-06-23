@@ -119,7 +119,7 @@ margin-right: 40px;
 display: flex;
 margin-right: auto;
 margin-left: auto;
-width: 600px;
+max-width: 600px;
 }
 
 .div-btn-t {
@@ -129,7 +129,7 @@ width: 600px;
 
 .btn {
 padding: 5px;
-width: 90px;
+max-width: 90px;
 display: inline-block;
 background-color: #fa528f;
 margin-top: 35px;
@@ -173,8 +173,10 @@ transition: all 0.3s ease;
         display: block;
     }
     .btn {
-        display: block;
+        display: inline-block;
         margin-top: 0px;
         margin-bottom: 5px;
+        font-size: 12px;
+        padding: 3px;
     }
   }
