@@ -27,12 +27,12 @@ text-shadow: 1px 1px 2px #000;
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    width: 720px;
+    max-width: 900px;
     flex-direction: row;
     margin-bottom: 150px;
     box-shadow: 28px 28px 50px #0d275016, -23px -23px 50px #0d275016;
     border-radius: 12px;
-    padding: 10px;
+    padding: 20px;
 }
 
 .pfp {
