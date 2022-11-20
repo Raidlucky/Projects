@@ -119,10 +119,11 @@ text-shadow: 1px 1px 2px #000;
     border: #3b3b3b;
     border-radius: 12px;
     padding: 10px;
+    padding-bottom: 35px;
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 20px;
+    margin-bottom: 100px;
     display: block;
     box-shadow: 28px 28px 50px #0d275016, -23px -23px 50px #0d275016;
 }
