@@ -12,5 +12,11 @@ anime({
 
 
 function con_close() {
-div.style.cssText = "display: none;";
+    anime({
+        targets: ".contact-alert, inner-contact",
+        opacity: 0,
+        easing: 'linear',
+        duration: '250'
+    })
+        setTimeout(() => {div.style.display = "none";}, 250);
 }
