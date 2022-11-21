@@ -1,14 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="html" lang="en">
     <head>
         <title>RaidLucky</title>
         <link rel="stylesheet" href="css/styles.css">
         <meta name="author" content="RaidLucky">
         <meta name="description" content="Hi I'm Lucky a learning Front-End Developer">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="fontawesome-free-5.15.2-web/css/all.css">
+        <link rel="stylesheet" href="fontawesome-free-6.2.1-web/css/all.css">
     </head>
     <body class="body">
+        <div id="contact" class="contact-alert">
+            <button class="exit" onclick="con_close()"><i class="fa-solid fa-xmark"></i></button>
+            <div class="inner-contact">
+            <h1>Contact Information</h1>
+            <p><i class="fa-solid fa-phone"></i> (719) 315-0737</p>
+            <p><i class="fa-solid fa-envelope"></i><a style="color: #313131;text-decoration: none;cursor: pointer;" href="mailto:luckylightfoot@icloud.com">luckylightfoot@icloud.com</a></p>
+            <p><i class="fa-brands fa-discord"></i> Lucky'#0001</p>
+        </div>
+        </div>
         <h1 class="h1">About Me</h1>
         <div class="about-flex">
             <div class="div-image">
@@ -17,7 +26,7 @@
             <div class="text-links">
                 <p>Hi I'm Lucky, I have been learning to become a front-End Developer. I know HTML, CSS, JS, and Python. I have been coding for 2 years now and create Youtube videos about the things I learn. You can contact me through Discord, my tag is Lucky'#0001.</p>
                 <div class="div-btn">
-                    <a class="btn" target="_blank" href="https://discord.bio/p/raidlucky"><i class="fas fa-address-card"></i> Contact</a>
+                    <button class="btn" onclick="contact()"><i class="fas fa-address-card"></i> Contact</button>
                     <a class="btn" target="_blank" href="https://github.com/raidlucky"><i class="fab fa-github-square"></i> Github</a>
                     <a class="btn" target="_blank" href="https://twitch.tv/raidlucky"><i class="fab fa-twitch"></i> Twitch</a>
                     <a class="btn" target="_blank" href="https://www.youtube.com/channel/UCGdIBOdyYO33IQG2anMYkzg"><i class="fab fa-youtube-square"></i> Youtube</a>
@@ -42,5 +51,7 @@
         <p class="p">Project for a class last year, and functional buttons and animations.</p>
         <a  target="_blank" rel="noopener noreferrer" class="link" href="https://raidlucky.github.io/phone/">Visit</a>
         <img class="img" src="images/phone.png" alt="No-Photo">
+        <script src="anime.min.js"></script>
+        <script src="main.js"></script>
     </body>
 </html>

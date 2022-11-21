@@ -1,7 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
-.body {
+
+:root {
+    --secondary: #8fd9fd;
+    --sec-hover: #4fc4ff;
+    --primary: #fa528f;
+    --pri-hover: #f02c74;
+}
+
+.body, .html {
+    overflow: auto;
     font-family: "Ubuntu";
     background-color: #ececec;
+    margin: 0px;
+    box-sizing: border-box;
 }
 
 .h1 {
@@ -53,7 +64,7 @@ text-shadow: 1px 1px 2px #000;
     display: block;
     margin: 0 auto;
     border: #2a1f2d;
-    background-color: #fa528f;
+    background-color: var(--primary);
     border-radius: 4px;
     padding: 9px 25px;
     cursor: pointer;
@@ -65,7 +76,7 @@ text-shadow: 1px 1px 2px #000;
 }
 
 .link:hover {
-    background-color: #df6d97;
+    background-color: var(--pri-hover);
 }
 
 .contact {
@@ -75,7 +86,7 @@ text-shadow: 1px 1px 2px #000;
     display: block;
     margin-left: 25px;
     border: #2a1f2d;
-    background-color: #fa528f;
+    background-color: var(--primary);
     border-radius: 4px;
     padding: 9px 25px;
     cursor: pointer;
@@ -149,9 +160,9 @@ max-width: 600px;
 
 .btn {
 padding: 5px;
-max-width: 90px;
+max-width: 120px;
 display: inline-block;
-background-color: #fa528f;
+background-color: var(--primary);
 margin-top: 35px;
 margin-bottom: 15px;
 margin-right: 5px;
@@ -162,10 +173,57 @@ text-decoration: none;
 color: white;
 text-align: center;
 transition: all 0.3s ease;
+border: none;
 }
 
 .btn:hover {
-    background-color: #df6d97;
+    background-color: var(--pri-hover);
+}
+
+.contact-alert {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position: fixed;
+    margin: 0px;
+    background-color: rgba(0, 0, 0, 0.233);
+    backdrop-filter: blur(3px);
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-contact {
+    background-color: white;
+    max-width: 600px;
+    border-radius: 8px;
+    color: #313131;
+    padding: 20px;
+    right: 200px;
+    position: relative;
+    opacity: 0;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.inner-contact > a {
+    color: #313131;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.exit {
+    position: absolute;
+    font-size: 25px;
+    top: 0;
+    right: 0;
+    background-color: #fff0;
+    border: none;
+    color: #e74545;
+    margin-top: 20px;
+    margin-right: 20px;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 667px) {
