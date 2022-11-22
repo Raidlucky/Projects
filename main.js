@@ -12,6 +12,7 @@ anime({
 
 
 function con_close() {
+    let inner = document.getElementById('inner').style.cssText = "right: 200px;"
     anime({
         targets: ".contact-alert, inner-contact",
         opacity: 0,
