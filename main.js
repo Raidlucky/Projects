@@ -1,23 +1,9 @@
-let div = document.getElementById('contact');
-function contact() {
-div.style.cssText = "display: flex;";
-anime({
-    targets: ".inner-contact",
-    right: "0px",
-    easing: 'linear',
-    duration: '250',
-    opacity: 1,
-});
+function Open() {
+    document.querySelector('.pop').style.display = "flex";
+    console.log('Open');
 }
 
-
-function con_close() {
-    let inner = document.getElementById('inner').style.cssText = "right: 200px;"
-    anime({
-        targets: ".contact-alert, inner-contact",
-        opacity: 0,
-        easing: 'linear',
-        duration: '250'
-    })
-        setTimeout(() => {div.style.display = "none";}, 250);
+function Close() {
+    document.querySelector('.pop').style.display = "none";
+    console.log('Close');
 }
