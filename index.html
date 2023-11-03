@@ -10,6 +10,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+    <nav>
+        <h1>RaidLucky</h1>
+        <div class="nav-links">
+            <a href="#mainContent" class="nav-link">Work</a>
+            <a href="#aboutMe" class="nav-link">About</a>
+        </div>
+    </nav>
     <button onclick="Close()" class="pop">
         <div>
             <h3><i class="fa-solid fa-phone"></i> 630-310-2681</h3>
@@ -17,12 +24,15 @@
             <h3><i class="fa-brands fa-discord"></i> LuckyTampax</h3>
         </div>
     </button>
-    <div class="main-content">
+    <div id="mainContent" class="main-content">
         <div class="main-contentText">
             <h1 id="title">Atomic Tables</h1>
             <h3 style="color: #757575; font-family: 'Roboto';font-size:18px;">Lucky's Projects</h3>
             <p id="desc" style="width: 400px; font-family: 'Roboto';font-size:18px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod fugit consequatur non illo culpa ea rerum nulla cumque omnis, eos eius ab deserunt accusantium dolore ducimus. Quis voluptate ipsa repudiandae?</p>
-            <a target="_blank" href="" id="link" style="font-family: 'Roboto'; font-size: 15px;" class="btnLink">Visit Website</a>
+            <div>
+                <a target="_blank" href="" id="link" style="font-family: 'Roboto'; font-size: 15px;" class="btnLink">Visit Website</a>
+                <a target="_blank" id="repo" href="" style="font-family: 'Roboto'; font-size: 15px;" class="btnLink">View Repository</a>
+            </div>
         </div>
         <div style="display: block;" class="slide">
             <img src="images/Atomics.png" alt="">
@@ -34,13 +44,15 @@
             <img src="images/banz-dev.PNG" alt="">
         </div>
     </div>
-    <div class="Section">
+    <div id="aboutMe" class="Section">
         <h1>About Me</h1>
+        <span class="seperator"></span>
         <div class="about">
             <div style="display: flex; flex-direction: row; align-items: center;">
-                <img style="width:275px; height:275px; border-radius: 50%;object-fit: cover;object-position: top;" src="images/IMG_5381.jpg" alt="">
-                <div style="margin-left: 80px;display: flex;flex-direction: column;">
+                <img style="border: solid 2px #333;width:275px; height:275px; border-radius: 50%;object-fit: cover;object-position: top;" src="images/thumbnail_IMG_4897.jpg" alt="">
+                <div style="margin-left: 120px;display: flex;flex-direction: column;">
                     <h3 style="width: 500px; margin-inline: auto;">Hi, I'm Lucky, a Full-Stack Web Developer. I've been programming for 4 years. I'm experienced in Node, React, Vue, Tailwind, and NextJS. I love making simplistic and useful applications.</h3>
+                    <h3 style="width: 500px; margin-inline: auto;">I'm looking for work and experience! If you'd like to work with me, email me or message me. Feel free to check out some of my YouTube videos as well, and please leave a like on my videos.</h3>
                     <div style="display: flex; flex-direction: row;" class="btns">
                         <a style="margin-left: 0px;" class="btn" target="_blank" href="https://www.youtube.com/channel/UCGdIBOdyYO33IQG2anMYkzg"><i class="fa-brands fa-youtube"></i> Youtube</a>
                         <a class="btn" target="_blank" href="https://github.com/Raidlucky"><i class="fa-brands fa-github"></i> GitHub</a>
@@ -48,9 +60,9 @@
                         <button class="btn" onclick="Open()"><i class="fa-regular fa-address-card"></i> Contact</button>
                     </div>
                 </div>
-                
             </div>
         </div>
+        <span style="margin-top: 40px;" class="seperator"></span>
     </div>
     <script>
         (function(){
@@ -58,6 +70,7 @@
                 links = ['https://raidlucky.github.io/Atomics/pages/periodic.html', 'https://nutrition-website.herokuapp.com/index.html', 'https://banz.dev'];
                 titles = ['Atomic Tables', 'IronGrape', 'BanZ Development'];
                 desc = ['This Website is for looking at Periodic Elements, and any extra info about them like their mass, symbol, and any other facts.', 'This Website is for finding a diet plan and learning about nutritional information. By far my biggest project, and currently its not finished yet.', 'I created this website for the team I work with, We plan on making tools and webapps for work, entertainment, and everyday life.'];
+                repo = ['https://github.com/Raidlucky/Atomics', 'https://github.com/BanZ-Development/Irongrape', 'https://github.com/Raidlucky/Banz-Website'];
                 for (i=0; i < 3;i++) {
                     let slide = document.querySelectorAll('.slide')[i].style.display;
                     if (slide === 'block') {
@@ -71,6 +84,7 @@
                 document.getElementById('link').setAttribute('href', links[curr+1]);
                 document.getElementById('title').innerHTML = titles[curr+1];
                 document.getElementById('desc').innerHTML = desc[curr+1];
+                document.getElementById('repo').setAttribute('href', repo[curr+1]);
                 anime({targets: ".slide",opacity: [0, 1],duration: 500,easing: 'linear'});
             };
             window.setInterval(f, 15000);
