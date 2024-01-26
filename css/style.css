@@ -6,6 +6,7 @@ body {
     margin: 0px;
     background-color: #1a1a1a;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 .main-content {
@@ -57,13 +58,14 @@ body {
 }
 
 .Section {
-    height: 700px;
+    height: 550px;
     margin-top: 100px;
     color: #fff;
     text-align: center;
 }
 
-.about {
+.about, .work {
+    color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -159,4 +161,37 @@ nav {
     line-height: 70px;
     margin-inline: 7px;
     cursor: pointer;
+}
+
+.workcard {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    width: 700px;
+    background-color: #272727;
+    border-radius: 4px;
+}
+
+.workDesc {
+    width: 550px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.workTitle {
+    color: #007c95;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.workPos {
+    margin-top: 0px;
+    color: #ccc;
+}
+
+.workTime {
+    width: 150px;
 }
