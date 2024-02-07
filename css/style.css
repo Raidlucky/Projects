@@ -200,3 +200,12 @@ nav {
 .workTime {
     width: 150px;
 }
+
+.warning {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    width: 100%;
+    background-color: #ffc300;
+    z-index: 2;
+}
