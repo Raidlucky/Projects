@@ -162,7 +162,8 @@ body {
 }
 
 nav {
-    background-color: #151515;
+    background-color: #15151570;
+    backdrop-filter: blur(8px);
     display: flex;
     flex-direction: row;
     color: #fff;
