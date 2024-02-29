@@ -300,11 +300,11 @@ nav {
   @media only screen and (max-width: 666px) {
 
     nav {
-        background-color: #1a1a1a;
+        background-color: #1a1a1a !important;
     }
 
     .nav-link {
-        font-size: 17px;
+        font-size: 17.8px;
     }
 
     .main-contentText {
