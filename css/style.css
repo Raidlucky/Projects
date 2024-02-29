@@ -17,13 +17,16 @@ body {
     justify-content: center;
     width: 100%;
     position: relative;
-    height: 80vh;
+    height: 85vh;
 }
 
 .main-content > div > img {
+    height: 100%;
     width: 100%;
     z-index: -1;
     filter: blur(5px) brightness(0.3);
+    object-fit: cover;
+    object-position: center;
 }
 
 .slide {
@@ -48,21 +51,25 @@ body {
     color: #333;
     padding: 10px;
     border-radius: 5px;
-    width: 120px;
     cursor: pointer;
     text-decoration: none;
     margin-block: 15px;
-    font-size: 13.5px;
+    font-size: 18px;
+    margin-inline: 5px;
+    border: solid 1px #fff0;
 }
 
 .btnLink:hover {
     transition: ease all 0.3s;
-    background-color: #d1d1d1;
+    background-color: #007c95;
+    color: #fff;
+}
+
+#desc {
+    font-size: 20px;
 }
 
 .Section {
-    padding-top: 80px;
-    height: 550px;
     margin-top: 100px;
     color: #fff;
     text-align: center;
@@ -79,16 +86,21 @@ body {
     text-align: left;
 }
 
+.aboutText {
+    margin-left: 120px;
+    display: flex;
+    flex-direction: column;
+}
+
 .btn {
     margin-inline: 10px;
     background-color: #fff;
     padding: 10px;
-    font-size: 15.5px;
+    font-size: 16px;
     font-family: 'Montserrat';
     font-weight: 500;
     border-radius: 5px;
     color: #1a1a1a;
-    font-size: 13px;
     text-decoration: none;
     transition: ease all 0.3s;
     cursor: pointer;
@@ -102,7 +114,8 @@ body {
 
 .seperator {
     background-color: #333;
-    width: 70%; height: 2px;
+    width: 90%;
+    height: 2px;
     display: block;
     margin-inline: auto;
 }
@@ -162,6 +175,11 @@ nav {
 
 .nav-link {
     color: #fff;
+    background-color: #fff0;
+    border: none;
+    font-family: 'Montserrat';
+    display: inline-block;
+    height: 100%;
     text-decoration: none;
     line-height: 80px;
     margin-inline: 10px;
@@ -173,7 +191,7 @@ nav {
     display: flex;
     flex-direction: row;
     padding: 10px;
-    width: 700px;
+    width: 90%;
     background-color: #272727;
     border-radius: 4px;
 }
@@ -191,6 +209,10 @@ nav {
     font-size: 22px;
     font-weight: 600;
     margin-top: 10px;
+}
+
+.workTitle > i {
+    font-size: .9rem;
 }
 
 .workPos {
@@ -211,3 +233,81 @@ nav {
     z-index: 2;
     text-align: center;
 }
+
+@media only screen and (max-width: 930px) {
+    .about > div {
+        flex-direction: column !important;
+    }
+
+    .aboutText {
+        margin-left: 0px;
+    }
+
+    .aboutText > h3 {
+        width: 90% !important;
+        padding-inline: 10px !important;
+    }
+
+    .btns {
+        justify-content: center;
+    }
+
+    .btn {
+        font-size: 16px;
+    }
+  }
+
+  @media only screen and (max-width: 375px) {
+
+    .nav-link {
+        font-size: 17px;
+    }
+
+    .main-contentText {
+        margin-inline: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-contentText > #title {
+        font-size: 28px;
+    }
+
+    .main-contentText > h3 {
+        display: none;
+    }
+
+    .main-contentText > p {
+        width: 95% !important;
+        text-align: center;
+    }
+
+    .btn {
+        font-size: 12px;
+        margin-inline: 5px;
+    }
+
+    .workTitle {
+        font-size: 1rem;
+    }
+
+    .workPos {
+        font-size: .9rem;
+    }
+
+    .workcard {
+        background-color: #fff0;
+    }
+
+    .workDesc > p {
+        font-size: .875rem;
+    }
+
+    .warning {
+        font-size: 14px;
+        height: 55px;
+    }
+
+  }

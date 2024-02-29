@@ -17,7 +17,7 @@
     <nav style="margin-top: 51px;">
         <h1 style="margin-block: auto;">RaidLucky</h1>
         <div class="nav-links">
-            <a href="#mainContent" class="nav-link">Work</a>
+            <button onclick="Open()" class="nav-link">Contact</button>
             <a href="#aboutMe" class="nav-link">About</a>
         </div>
     </nav>
@@ -32,20 +32,23 @@
         <div class="main-contentText">
             <h1 id="title">Atomic Tables</h1>
             <h3 style="color: #757575; font-family: 'Roboto';font-size:18px;">Lucky's Projects</h3>
-            <p id="desc" style="width: 400px; font-family: 'Roboto';font-size:18px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod fugit consequatur non illo culpa ea rerum nulla cumque omnis, eos eius ab deserunt accusantium dolore ducimus. Quis voluptate ipsa repudiandae?</p>
-            <div>
-                <a target="_blank" href="" id="link" style="font-family: 'Roboto'; font-size: 15px;" class="btnLink">Visit Website</a>
-                <a target="_blank" id="repo" href="" style="font-family: 'Roboto'; font-size: 15px;" class="btnLink">View Repository</a>
+            <p id="desc" style="width: 400px; font-family: 'Roboto';">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod fugit consequatur non illo culpa ea rerum nulla cumque omnis, eos eius ab deserunt accusantium dolore ducimus. Quis voluptate ipsa repudiandae?</p>
+            <div style="display: flex; flex-direction: row;">
+                <a target="_blank" href="" id="link" style="font-family: 'Roboto';" class="btnLink">Visit Website</a>
+                <a target="_blank" id="repo" href="" style="font-family: 'Roboto';" class="btnLink">View Repository</a>
             </div>
         </div>
         <div style="display: block;" class="slide">
+            <img src="images/banz-dev.PNG" alt="">
+        </div>
+        <div style="display: none;" class="slide">
             <img src="images/Atomics.png" alt="">
         </div>
         <div style="display: none;" class="slide">
             <img src="images/nutrizone2.PNG" alt="">
         </div>
         <div style="display: none;" class="slide">
-            <img src="images/banz-dev.PNG" alt="">
+            <img src="images/Premier.png" alt="">
         </div>
     </div>
     <div id="aboutMe" class="Section">
@@ -54,7 +57,7 @@
         <div class="about">
             <div style="display: flex; flex-direction: row; align-items: center;">
                 <img style="border: solid 2px #333;width:275px; height:275px; border-radius: 50%;object-fit: cover;object-position: top;" src="images/thumbnail_IMG_4897.jpg" alt="">
-                <div style="margin-left: 120px;display: flex;flex-direction: column;">
+                <div class="aboutText">
                     <h3 style="width: 500px; margin-inline: auto;">Hi, I'm Lucky, a Full-Stack Web Developer. I've been programming for 4 years. I'm experienced in Node, React, Vue, Tailwind, and NextJS. I love making simplistic and useful applications.</h3>
                     <h3 style="width: 500px; margin-inline: auto;">I'm looking for work and experience! If you'd like to work with me, email me or message me. Feel free to check out some of my YouTube videos as well, and please leave a like on my videos.</h3>
                     <div style="display: flex; flex-direction: row;" class="btns">
@@ -73,39 +76,12 @@
         <div class="workcard">
             <h3 class="workTime">2020 - present</h3>
             <div class="workDesc">
-                <a target="_blank" href="https://banz.dev" class="workTitle" style="margin-bottom: 0px;">BanZ Development</a>
+                <a target="_blank" href="https://banz.dev" class="workTitle" style="margin-bottom: 0px;">BanZ Development <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 <h3 class="workPos">Founder, Senior-Developer</h3>
                 <p>Freelancing team started by me, and I've been working with BanZ for about four years. Grew the company to around six employees. Lead four projects with Banz and still work with them to this day.</p>
             </div>
         </div>
     </div>
-    <script>
-        (function(){
-            var f = function() {
-                links = ['https://raidlucky.github.io/Atomics/pages/periodic.html', 'https://nutrition-website.herokuapp.com/index.html', 'https://banz.dev'];
-                titles = ['Atomic Tables', 'IronGrape', 'BanZ Development'];
-                desc = ['This Website is for looking at Periodic Elements, and any extra info about them like their mass, symbol, and any other facts.', 'This Website is for finding a diet plan and learning about nutritional information. By far my biggest project, and currently its not finished yet.', 'I created this website for the team I work with, We plan on making tools and webapps for work, entertainment, and everyday life.'];
-                repo = ['https://github.com/Raidlucky/Atomics', 'https://github.com/BanZ-Development/Irongrape', 'https://github.com/Raidlucky/Banz-Website'];
-                for (i=0; i < 3;i++) {
-                    let slide = document.querySelectorAll('.slide')[i].style.display;
-                    if (slide === 'block') {
-                        curr = i;
-                        document.querySelectorAll('.slide')[i].style.display = 'none';
-                    }
-                }
-                if (curr === 2) {curr = -1;}
-                anime({targets: ".slide",opacity: [1, 0],duration: 500,easing: 'linear'});
-                document.querySelectorAll('.slide')[curr+1].style.display = 'block';
-                document.getElementById('link').setAttribute('href', links[curr+1]);
-                document.getElementById('title').innerHTML = titles[curr+1];
-                document.getElementById('desc').innerHTML = desc[curr+1];
-                document.getElementById('repo').setAttribute('href', repo[curr+1]);
-                anime({targets: ".slide",opacity: [0, 1],duration: 500,easing: 'linear'});
-            };
-            window.setInterval(f, 15000);
-            f();
-        })();
-    </script>
     <script src="main.js"></script>
 </body>
 </html>
