@@ -52,6 +52,8 @@ function dismissWarning() {
         document.getElementById('desc').innerHTML = desc[curr+1];
         document.getElementById('repo').setAttribute('href', repo[curr+1]);
         anime({targets: ".slide",opacity: [0, 1],duration: 500,easing: 'linear'});
+        document.querySelector('.progressIn').style.width = '0%';
+        anime({targets: '.progressIn',duration: '15000',width: ['0%', '100%'],easing: 'linear'});
     };
     window.setInterval(f, 15000);
     f();

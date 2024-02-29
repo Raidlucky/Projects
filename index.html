@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lucky | Projects</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Lucky | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
     <script src="anime.min.js"></script>
     <meta name="description" content="Hi, I'm Lucky Lightfoot, a Full-Stack Web Developer. I've been programming for 4 years. I'm experienced in Node, React, Vue, Tailwind, and NextJS. I love making simplistic and useful applications.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -15,7 +15,7 @@
         <button style="color: #fff; background-color: #fff0; border: #fff0; cursor: pointer; width: 70px;font-size: 18px;" onclick="dismissWarning()"><i class="fa-solid fa-xmark"></i></button>
     </div>
     <nav>
-        <h1 style="margin-block: auto;">Lucky</h1>
+        <h1 style="margin-block: auto;">Lucky's Portfolio</h1>
         <div class="nav-links">
             <button onclick="Open()" class="nav-link">Contact</button>
             <a href="#aboutMe" class="nav-link">About</a>
@@ -54,6 +54,9 @@
         <div style="display: none;" class="slide">
             <img src="images/Premier.png" alt="">
         </div>
+        <div class="progress">
+            <span class="progressIn"></span>
+        </div>
     </div>
     <div id="aboutMe" class="Section">
         <h1>About Me</h1>
@@ -77,12 +80,22 @@
     <div style="margin-bottom: 120px;" class="work">
         <h1>Work</h1>
         <span style="margin-bottom: 35px;" class="seperator"></span>
-        <div class="workcard">
-            <h3 class="workTime">2020 - present</h3>
-            <div class="workDesc">
-                <a target="_blank" href="https://banz.dev" class="workTitle" style="margin-bottom: 0px;">BanZ Development <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                <h3 class="workPos">Founder, Senior-Developer</h3>
-                <p>Freelancing team started by me, and I've been working with BanZ for about four years. Grew the company to around six employees. Lead four projects with Banz and still work with them to this day.</p>
+        <div class="workSep">
+            <div class="workDirect">
+                <h1>Lucky Lightfoot</h1>
+                <p>Full-Stack Web Developer</p>
+                <a href="#workExperience">Experience</a>
+                <a href="#Projects">Projects</a>
+            </div>
+            <div id="workExperience" class="workExperience">
+                <div class="workcard">
+                    <h3 class="workTime">2020 - Present</h3>
+                    <div class="workDesc">
+                        <a target="_blank" href="https://banz.dev" class="workTitle" style="margin-bottom: 0px;">BanZ Development <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <h3 class="workPos">Founder, Senior-Developer</h3>
+                        <p>Freelancing team started by me, and I've been working with BanZ for about four years. Grew the company to around six employees. Lead four projects with Banz and still work with them to this day.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
