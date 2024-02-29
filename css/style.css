@@ -157,6 +157,10 @@ body {
     flex-direction: column;
 }
 
+.pop > div > a {
+    font-size: 20px !important;
+}
+
 nav {
     background-color: #151515;
     display: flex;
@@ -232,6 +236,41 @@ nav {
     background-color: #ffc300;
     z-index: 2;
     text-align: center;
+}
+
+.contactPop {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-weight: 600 !important;
+    font-size: 20px !important;
+}
+
+.contactLinks {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin-inline: auto;
+}
+
+.contactLinks > a {
+    margin-block: 10px;
+}
+
+.contactLinks > a:hover {
+    color: #007c95;
+}
+
+.contactLinks > p {
+    margin-block: 10px;
+}
+
+.contactPop > h2 {
+    margin-block: 10px;
+    text-align: center;
+    width: 80%;
+    margin-inline: auto;
+    border-bottom: solid 1px #333;
 }
 
 @media only screen and (max-width: 930px) {
