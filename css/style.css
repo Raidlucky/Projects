@@ -257,7 +257,7 @@ nav {
     }
   }
 
-  @media only screen and (max-width: 375px) {
+  @media only screen and (max-width: 666px) {
 
     .nav-link {
         font-size: 17px;
@@ -272,7 +272,7 @@ nav {
     }
 
     .main-contentText > #title {
-        font-size: 28px;
+        font-size: 7.5vw;
     }
 
     .main-contentText > h3 {
@@ -282,11 +282,12 @@ nav {
     .main-contentText > p {
         width: 95% !important;
         text-align: center;
+        font-size: 4vw;
     }
 
     .btn {
         font-size: 12px;
-        margin-inline: 5px;
+        margin-inline: 3.5px;
     }
 
     .workTitle {
