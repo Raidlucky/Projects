@@ -257,6 +257,10 @@ nav {
     margin-top: 10px;
 }
 
+.workTitle:hover {
+    text-decoration: underline;
+}
+
 .workTitle > i {
     font-size: .9rem;
 }
