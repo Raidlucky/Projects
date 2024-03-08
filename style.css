@@ -64,7 +64,7 @@ body {
 
 .btnLink:hover {
     transition: ease all 0.3s;
-    background-color: #007c95;
+    background-color: #03a7c8;
     color: #fff;
 }
 
@@ -231,6 +231,11 @@ nav {
     margin-inline: 10px;
     font-size: 20px;
     cursor: pointer;
+    transition: ease all 0.3s;
+}
+
+.nav-link:hover {
+    color: #c4c4c4;
 }
 
 .workcard {
@@ -305,7 +310,7 @@ nav {
 }
 
 .contactLinks > a:hover {
-    color: #007c95;
+    color: #03a7c8 !important;
 }
 
 .contactLinks > p {
@@ -327,6 +332,7 @@ nav {
     height: 20px;
     position: absolute;
     bottom: 0;
+    border-radius: 5px;
 }
 
 .progressIn {
@@ -335,6 +341,7 @@ nav {
     width: 0%;
     height: 20px;
     box-shadow: rgba(255, 255, 255, 0.24) 0px 5px 15px;
+    border-radius: 5px;
 }
 
 .workExperience {
@@ -485,7 +492,7 @@ nav {
         margin-inline: 3.5px;
     }
 
-    .workTitle {
+    .workTitle, .workTime {
         font-size: 1rem;
     }
 
