@@ -131,6 +131,11 @@ body {
     margin-left: 120px;
     display: flex;
     flex-direction: column;
+    font-weight: 400;
+}
+
+.aboutText > h3 {
+    font-weight: 400;
 }
 
 .btn {
