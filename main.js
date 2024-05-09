@@ -31,6 +31,22 @@ function dismissWarning() {
     document.querySelector('nav').style.marginTop = "0";
 }
 
+document.querySelector('#body').addEventListener('scroll', scrollCheck());
+
+function scrollCheck() {
+    let pos = document.documentElement.scrollTop;
+    console.log(pos);
+    if (pos < 1825) {
+        document.querySelector('#experience').style = 'width: 45px; background-color: #484848;';
+        document.querySelector('#project').style = 'width: 15px; background-color: #484848;';
+    } else {
+        document.querySelector('#project').style = 'width: 45px; background-color: #484848;';
+        document.querySelector('#experience').style = 'width: 15px; background-color: #484848;';
+
+    }
+}
+
+
 (function(){
     var f = function() {
         links = ['https://banz.dev', 'https://raidlucky.github.io/Atomics/pages/periodic.html', 'https://nutrition-website.herokuapp.com/index.html', 'https://premiertwi.com'];

@@ -73,19 +73,20 @@ body {
 }
 
 .Section {
-    margin-top: 100px;
+    padding-inline: 50px;
     color: #fff;
     text-align: center;
     background-color: #1a1a1a;
 }
 
 .about, .work {
-    color: #fff;
+    background-color: #fcfcfc;
+    color: #333;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 80px;
+    padding-top: 80px;
     text-align: left;
 }
 
@@ -117,14 +118,14 @@ body {
 }
 
 .workDirect > a {
-    color: #c4c4c4;
+    color: #333;
     text-decoration: none;
     margin-block: 10px;
     font-size: 20px;
 }
 
 .workDirect > a:hover {
-    color: #fff;
+    color: #484848;
 }
 
 .aboutText {
@@ -132,6 +133,7 @@ body {
     display: flex;
     flex-direction: column;
     font-weight: 400;
+    color: #333;
 }
 
 .aboutText > h3 {
@@ -154,7 +156,6 @@ body {
 }
 
 .btn:hover {
-    background-color: #d1d1d1;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
@@ -248,7 +249,6 @@ nav {
     flex-direction: row;
     padding: 10px;
     width: 100%;
-    font-size: 20px;
     background-color: #fff0;
     border-radius: 4px;
 }
@@ -278,11 +278,12 @@ nav {
 
 .workPos {
     margin-top: 0px;
-    color: #ccc;
+    color: #333;
 }
 
 .workTime {
-    width: 150px;
+    width: 200px;
+    font-size: 16px;
 }
 
 .warning {
@@ -342,7 +343,7 @@ nav {
 
 .progressIn {
     display: block;
-    background-color: #fff;
+    background-color: #6c6c6c;
     width: 0%;
     height: 20px;
     box-shadow: rgba(255, 255, 255, 0.24) 0px 5px 15px;
@@ -367,14 +368,14 @@ nav {
     display: inline-block;
     height: 1px;
     width: 15px;
-    background-color: #c4c4c4;
+    background-color: #333;
     margin-right: 5px;
     transition: ease all 0.3s;
 }
 
 .directLink:hover > .directLine {
     width: 45px;
-    background-color: #fff;
+    background-color: #484848;
 }
 
 .works {
@@ -382,6 +383,39 @@ nav {
     flex-direction: column;
     align-items: center;
     width: 65%;
+}
+
+.project {
+    display: flex;
+    flex-direction: row;
+    width: 65%;
+    margin-inline: auto;
+    margin-top: 100px;
+}
+
+.projImg {
+    height: 80px;
+    border-radius: 3px;
+    border: solid 2px #333;
+}
+
+.projDesc {
+    margin-left: 10px;
+}
+
+.projDesc > h2 {
+    margin-top: 0px;
+    font-size: 20px;
+}
+
+.tag {
+    font-size: 14px;
+    background-color: #b36e0086;
+    color: #fff3e1;
+    border-radius: 9999px;
+    padding-inline: 10px;
+    padding-block: 5px;
+    margin-inline: 5px;
 }
 
 @media only screen and (max-width: 1016px) {

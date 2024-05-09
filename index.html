@@ -19,7 +19,7 @@
     </script>
 
 </head>
-<body>
+<body onscroll="scrollCheck()" id="body">
     <div style="display: none;" class="warning">
         <p style="text-align: center; color: #fff; align-self: center; margin-inline: auto;padding-left: 70px;"><i class="fa-solid fa-triangle-exclamation"></i> Warning: Website is not currently finished</p>
         <button style="color: #fff; background-color: #fff0; border: #fff0; cursor: pointer; width: 70px;font-size: 18px;" onclick="dismissWarning()"><i class="fa-solid fa-xmark"></i></button>
@@ -68,15 +68,13 @@
             <span class="progressIn"></span>
         </div>
     </div>
-    <div id="aboutMe" class="Section">
-        <h1>About Me</h1>
-        <span class="seperator"></span>
-        <div class="about">
+    <div style="display: flex; justify-content: center; align-items: center; height: 90vh; background-color: #fcfcfc;" id="aboutMe" class="Section">
+        <div style="width: 80%;" class="about">
             <div style="display: flex; flex-direction: row; align-items: center;">
                 <img style="border: solid 2px #333;width:275px; height:275px; border-radius: 50%;object-fit: cover;object-position: top;" src="images/thumbnail_IMG_4897.jpg" alt="">
-                <div class="aboutText">
-                    <h3 style="width: 500px; margin-inline: auto;">Hi, I'm Lucky, a Full-Stack Web Developer. I've been programming for 4 years. I'm experienced in Ruby, NodeJS, React, Vue, Tailwind, and NextJS. I love making simplistic and useful applications.</h3>
-                    <h3 style="width: 500px; margin-inline: auto;">I'm looking for work and experience! If you'd like to work with me, email me or message me. Feel free to check out some of my YouTube videos as well, and please leave a like on my videos.</h3>
+                <div style="width: 570px;" class="aboutText">
+                    <h1 style="font-size: 40px;">Full-Stack Web Developer</h1>
+                    <h3 style="width: 100%">Hi, I'm Lucky, a Full-Stack Web Developer. I've been programming for 4 years. I'm experienced in Ruby, NodeJS, React, Vue, Tailwind, and NextJS. I love making simplistic and useful applications.</h3>
                     <div style="display: flex; flex-direction: row;" class="btns">
                         <a style="margin-left: 0px;" class="btn" target="_blank" href="https://www.youtube.com/channel/UCGdIBOdyYO33IQG2anMYkzg"><i class="fa-brands fa-youtube"></i> Youtube</a>
                         <a class="btn" target="_blank" href="https://github.com/Raidlucky"><i class="fa-brands fa-github"></i> GitHub</a>
@@ -87,15 +85,13 @@
             </div>
         </div>
     </div>
-    <div style="margin-bottom: 120px;" class="work">
-        <h1>Work</h1>
-        <span style="margin-bottom: 35px;" class="seperator"></span>
+    <div style="padding-bottom: 120px;" class="work">
         <div class="workSep">
             <div class="workDirect">
                 <h1>Lucky Lightfoot</h1>
                 <p>Full-Stack Web Developer</p>
-                <a class="directLink" href="#workExperience"><span class="directLine"></span>Experience</a>
-                <a class="directLink" href="#Projects"><span class="directLine"></span>Projects</a>
+                <a class="directLink" href="#workExperience"><span id="experience" class="directLine"></span>Experience</a>
+                <a class="directLink" href="#workProject"><span id="project" class="directLine"></span>Projects</a>
             </div>
             <div class="works">
                 <div id="workExperience" class="workExperience">
@@ -109,7 +105,44 @@
                     </div>
                 </div>
                 <div class="workProject" id="workProject">
-                    
+                    <div style="margin-top: 150px;" class="project">
+                        <img class="projImg" src="images/Premier.png" alt="">
+                        <div class="projDesc">
+                            <h2>Premier Transportation</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora, quia, sunt eveniet repellendus excepturi eius voluptatem provident obcaecati doloribus accusamus, cupiditate pariatur nobis? Quibusdam quos ea dolorem molestias! Magni, porro!</p>
+                        <div style="display: flex; flex-direction: row;" class="tags">
+                            <p class="tag">HTML</p>
+                            <p class="tag">CSS</p>
+                            <p class="tag">Javascript</p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <img class="projImg" src="images/banz-dev.PNG" alt="">
+                        <div class="projDesc">
+                            <h2>BanZ Development</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora, quia, sunt eveniet repellendus excepturi eius voluptatem provident obcaecati doloribus accusamus, cupiditate pariatur nobis? Quibusdam quos ea dolorem molestias! Magni, porro!</p>
+                        <div style="display: flex; flex-direction: row;" class="tags">
+                            <p class="tag">HTML</p>
+                            <p class="tag">CSS</p>
+                            <p class="tag">Javascript</p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <img class="projImg" src="images/nutrizone2.PNG" alt="">
+                        <div class="projDesc">
+                            <h2>IronGrape</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora, quia, sunt eveniet repellendus excepturi eius voluptatem provident obcaecati doloribus accusamus, cupiditate pariatur nobis? Quibusdam quos ea dolorem molestias! Magni, porro!</p>
+                        <div style="display: flex; flex-direction: row;" class="tags">
+                            <p class="tag">HTML</p>
+                            <p class="tag">CSS</p>
+                            <p class="tag">Heroku</p>
+                            <p class="tag">NodeJS</p>
+                            <p class="tag">MongoDB</p>
+                        </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
