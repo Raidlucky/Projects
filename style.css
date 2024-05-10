@@ -189,6 +189,7 @@ body {
     backdrop-filter: blur(3px) brightness(0.5);
     background-color: #ffffff00;
     border: none;
+    cursor: pointer;
 }
 
 .pop > div {
@@ -309,6 +310,7 @@ nav {
     flex-direction: column;
     width: 95%;
     margin-inline: auto;
+    margin-left: 40px;
 }
 
 .contactLinks > a {
@@ -400,7 +402,7 @@ nav {
 }
 
 .projDesc {
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 .projDesc > h2 {
@@ -416,6 +418,11 @@ nav {
     padding-inline: 10px;
     padding-block: 5px;
     margin-inline: 5px;
+}
+
+.tags {
+    display: flex;
+    flex-direction: row;
 }
 
 @media only screen and (max-width: 1016px) {
@@ -471,6 +478,43 @@ nav {
   }
 
   @media only screen and (max-width: 666px) {
+
+    .aboutText {
+        width: 100% !important;
+    }
+
+    .aboutText > h1 {
+        font-size: 6.2vw;
+        text-align: center;
+    }
+
+    .aboutText > h3 {
+        font-size: 3vw;
+        width: 100% !important;
+    }
+
+    .about {
+        padding-top: 0px;
+    }
+
+    .project {
+        flex-direction: column;
+    }
+
+    .projImg {
+        width: 100%;
+        height: unset;
+        margin-block: 10px;
+    }
+
+    .tags {
+        display: grid !important;
+        grid-template-columns: auto auto auto;
+    }
+
+    .tag {
+        text-align: center;
+    }
 
     .works {
         width: 100%;
